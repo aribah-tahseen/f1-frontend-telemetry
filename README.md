@@ -1,27 +1,53 @@
-# F1 Telemetry Backend
+# F1 Frontend
 
-A lightweight FastAPI backend that exposes simulated Formula 1 lap-time telemetry for charts and dashboards. It is designed to provide a simple, reliable API for frontend applications without requiring a full telemetry database or external service.
+A lightweight static Formula 1 fan website built with HTML, CSS, and JavaScript. The project presents a collection of F1-themed pages covering drivers, track details, telemetry, pit-stop strategies, and component information.
+
+## Overview
+
+This repository contains a front-end experience inspired by the sport of Formula 1. It includes:
+
+- A landing page with navigation to key sections
+- Driver-related information and stats
+- Telemetry and performance data views
+- Track details with selectable circuits and race stats
+- Pit-stop strategy content
+- Component and team/vehicle reference data
 
 ## Features
 
-- FastAPI application with CORS enabled for browser-based clients
-- Root health check endpoint
-- `/lap-times` endpoint for generating sample lap-time data by season, driver, and track
-- Universal fallback logic for unknown tracks or drivers
-- Realistic lap-time variations and degradation simulation
+- Static, no-build web app
+- Responsive styling for desktop browsing
+- Interactive track selector for viewing circuit information
+- Race and track metadata such as length, laps, records, and winners
+- Rich image assets for drivers, circuits, and race visuals
 
 ## Tech Stack
 
-- Python
-- FastAPI
-- Uvicorn
-- pandas
-- fastf1
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Static media assets (PNG, JPG, AVIF)
 
 ## Project Structure
 
 ```text
 .
-├── main.py
-├── requirements.txt
-└── README.md
+├── index.html                # Landing page
+├── about.html                # About page
+├── driver.html               # Driver data page
+├── telemetry.html            # Telemetry page
+├── track.html                # Dynamic track information page
+├── pit.html                  # Pit strategy page
+├── Component.html            # Component details page
+├── about.css                 # About page styles
+├── comp.css                  # Component page styles
+├── dash.css                  # Dashboard/landing page styles
+├── driver.css                # Driver page styles
+├── index.css                 # Additional landing styles
+├── pit.css                   # Pit strategy styles
+├── telemetry.css             # Telemetry styles
+├── track.css                 # Track page styles
+├── *.jpg                     # Driver and background images
+├── *.png                     # Circuit and media assets
+├── *.avif                    # Monaco circuit image
+└── README.md                 # Project documentation
